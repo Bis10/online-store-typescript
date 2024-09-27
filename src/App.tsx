@@ -1,5 +1,7 @@
-import { Button } from 'react-bootstrap';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
+import StoreNavbar from './components/StoreNavbar';
+import List from './components/List';
 
 function App() {
   
@@ -7,7 +9,12 @@ function App() {
   return (
    
       <div>
-        <Button>A button</Button>
+       <StoreNavbar/>
+       <BrowserRouter>
+       <Routes>
+        <Route path = "/" element={<List/>} />
+       </Routes>
+       </BrowserRouter>
       </div>
    
   );
