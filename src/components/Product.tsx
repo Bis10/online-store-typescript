@@ -21,7 +21,9 @@ export const Product = (props: IProps) => {
         </article>
         <article className="Detail_info">
           <span className="Detail_price">${price}</span>
-          <span className="Detail_rate">${rating.rate}</span>
+        </article>
+        <article className="Detail_info">
+          <span className="Detail_rate">{rating.rate}</span>
         </article>
         <article className="Detail_description">
           <p>{description}</p>
