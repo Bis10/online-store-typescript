@@ -10,11 +10,11 @@ export const calculateTotalOfProducts = (products: Product[])=>{
     return parseFloat(total.toFixed(2));
 }
 
-// export const reverseStringToUpperCase=(string:string)=>{
-//     return string.split("").reverse().join("").toUpperCase();
-// }
-// const result = reverseStringToUpperCase('Hello');
-// console.log(result); 
+export const reverseStringToUpperCase=(string:string)=>{
+    return string.split("").reverse().join("").toUpperCase();
+}
+const result = reverseStringToUpperCase('Hello');
+console.log(result); 
 
 
 
